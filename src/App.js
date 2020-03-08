@@ -1,15 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Header from "./components/header";
-import MainContent from "./components/mainContent";
+import React, { Component } from "react";
+import Main from "./components/main";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
-  return (
-    <React.Fragment>
-      <Header />
-      <MainContent />
-    </React.Fragment>
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Main />
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
