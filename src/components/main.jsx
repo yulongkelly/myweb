@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ProjectPage from "./projectPage";
-import Agenda from "./agenda";
+// import Agenda from "./agenda";
 import Home from "./home";
 import Footer from "./footer";
 import Navbar from "./navbar";
@@ -14,7 +14,7 @@ class Main extends Component {
         <Switch>
           <Route exact path="/home" component={Home} />
           <Route exact path="/project" component={ProjectPage} />
-          <Route exact path="/agenda" component={Agenda} />
+          {/* <Route exact path="/agenda" component={Agenda} /> */}
           <Redirect to="/home" component={Home} />
         </Switch>
         <Footer />

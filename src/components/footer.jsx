@@ -102,9 +102,9 @@ class Footer extends Component {
                 <div>
                   <Link to="/project">Project</Link>
                 </div>
-                <div>
+                {/* <div>
                   <Link to="/Agenda">Agenda</Link>
-                </div>
+                </div> */}
               </div>
               <div className="col-md-6 mb-4">
                 <h5 style={{ color: "whitesmoke" }}>Contact</h5>
