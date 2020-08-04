@@ -34,8 +34,6 @@ class Footer extends Component {
   }
 
   handleSubmit(event) {
-    event.preventDefault();
-
     const contact = {
       name: this.state.name,
       email: this.state.email,
@@ -44,7 +42,7 @@ class Footer extends Component {
     };
 
     axios
-      .post("http://localhost:5001/contacts/add", contact)
+      .post(`http://localhost:5001/contacts/add`, contact)
       .then(res => console.log(res.data));
 
     this.setState({
@@ -53,6 +51,7 @@ class Footer extends Component {
       subject: "",
       message: ""
     });
+    event.preventDefault();
   }
 
   handleBlur = field => evt => {
@@ -102,9 +101,9 @@ class Footer extends Component {
                 <div>
                   <Link to="/project">Project</Link>
                 </div>
-                <div>
+                {/* <div>
                   <Link to="/Agenda">Agenda</Link>
-                </div>
+                </div> */}
               </div>
               <div className="col-md-6 mb-4">
                 <h5 style={{ color: "whitesmoke" }}>Contact</h5>

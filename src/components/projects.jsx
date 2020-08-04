@@ -3,7 +3,6 @@ import { Card, CardGroup, Col } from "react-bootstrap";
 import five from "./five-in-a-row.png";
 import academic from "./academic.png";
 import habit1 from "./habit1.png";
-import habit2 from "./habit2.png";
 
 class Project extends Component {
   render() {
@@ -32,11 +31,7 @@ class Project extends Component {
           </Card.Footer>
         </Card>
         <Card>
-          {/* <Card.Img variant="top" src={habit1} className="projectImg" /> */}
-          {/* <Col>
-              <Card.Img variant="top" src={habit2} />
-            </Col> */}
-
+          <Card.Img variant="top" src={habit1} className="projectImg" />
           <Card.Body>
             <Card.Title>Card title</Card.Title>
             <Card.Text>

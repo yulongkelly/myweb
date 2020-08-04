@@ -1,0 +1,7 @@
+@import "~react-agenda/build/styles.css";
+@import "~react-datetime/css/react-datetime.css";
+
+.agenda-container {
+  background-color: white;
+  padding-bottom: 300px;
+}
