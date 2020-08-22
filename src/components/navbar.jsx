@@ -47,12 +47,12 @@ class NavBar extends Component {
                   Project
                 </NavLink>
               </NavItem>
-              <NavItem className="mt-2">
+              {/* <NavItem className="mt-2">
                 <NavLink className="nav-link" to="/agenda">
                   <i className="fas fa-calendar-alt" />
                   Agenda
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </div>

@@ -184,7 +184,7 @@ class Footer extends Component {
             style={{ color: "whitesmoke" }}
           >
             © 2020 Copyright:
-            <a href="https://google.com/"> YULONGKELLY.com</a>
+            <a href="http://yulongkelly.herokuapp.com/home"> YULONGKELLY.com</a>
           </div>
         </footer>
       </div>
