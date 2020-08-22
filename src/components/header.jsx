@@ -6,7 +6,7 @@ class Header extends Component {
     super();
     this.state = {
       name: "Kelly",
-      time: ""
+      time: "",
     };
     this.changeToYulong = this.changeToYulong.bind(this);
     this.changeToKelly = this.changeToKelly.bind(this);
@@ -80,11 +80,4 @@ class Header extends Component {
     );
   }
 }
-
-// getGradient() {
-//   let classes = this.state.name === "Kelly Wu" ? "purple" : "blue";
-//   classes += "-gradient";
-//   return classes;
-// }
-
 export default Header;

@@ -98,3 +98,11 @@ body {
 .projectImg {
   height: 65%;
 }
+
+.avaliable {
+  text-align: center;
+  /* background: linear-gradient(blue, pink); */
+  font-size: 60px;
+  color: white;
+  margin-top: 50px;
+}

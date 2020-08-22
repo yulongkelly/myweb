@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Header from "./header";
-import Nav from "./navbar";
-import Footer from "./footer";
+import AvaliableTime from "./avaliabletime";
 
 class Home extends Component {
   render() {
@@ -9,6 +8,7 @@ class Home extends Component {
       <div>
         <div className="home">
           <Header />
+          <AvaliableTime />
         </div>
       </div>
     );
