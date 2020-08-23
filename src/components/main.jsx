@@ -12,6 +12,7 @@ class Main extends Component {
       <React.Fragment>
         <Navbar />
         <Switch>
+          <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/project" component={ProjectPage} />
           <Route exact path="/contact" component={Footer} />
