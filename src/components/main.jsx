@@ -16,7 +16,7 @@ class Main extends Component {
           <Route exact path="/home" component={Home} />
           <Route exact path="/project" component={ProjectPage} />
           <Route exact path="/contact" component={Footer} />
-          <Route exact path="/agenda" component={Agenda} />
+          {/* <Route exact path="/agenda" component={Agenda} /> */}
           <Redirect to="/home" component={Home} />
         </Switch>
         <Footer />
