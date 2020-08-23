@@ -5,7 +5,7 @@ import {
   NavbarBrand,
   NavbarToggler,
   Collapse,
-  NavItem
+  NavItem,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import logo from "./logo.png";
@@ -14,14 +14,14 @@ class NavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isNavOpen: false
+      isNavOpen: false,
     };
     this.toggleNav = this.toggleNav.bind(this);
   }
 
   toggleNav() {
     this.setState({
-      isNavOpen: !this.state.isNavOpen
+      isNavOpen: !this.state.isNavOpen,
     });
   }
 
@@ -47,12 +47,12 @@ class NavBar extends Component {
                   Project
                 </NavLink>
               </NavItem>
-              {/* <NavItem className="mt-2">
+              <NavItem className="mt-2">
                 <NavLink className="nav-link" to="/agenda">
                   <i className="fas fa-calendar-alt" />
                   Agenda
                 </NavLink>
-              </NavItem> */}
+              </NavItem>
             </Nav>
           </Collapse>
         </div>
