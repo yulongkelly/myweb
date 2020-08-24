@@ -5,6 +5,7 @@ import Home from "./home";
 import Footer from "./footer";
 import Navbar from "./navbar";
 import { Switch, Route, Redirect } from "react-router-dom";
+import SecretAgenda from "./secret-agenda";
 
 class Main extends Component {
   render() {
@@ -16,7 +17,8 @@ class Main extends Component {
           <Route exact path="/home" component={Home} />
           <Route exact path="/project" component={ProjectPage} />
           <Route exact path="/contact" component={Footer} />
-          {/* <Route exact path="/agenda" component={Agenda} /> */}
+          <Route exact path="/agenda" component={Agenda} />
+          <Route exact path="/secretagenda" component={SecretAgenda} />
           <Redirect to="/home" component={Home} />
         </Switch>
         <Footer />

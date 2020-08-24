@@ -8,7 +8,7 @@ class Home extends Component {
       <div>
         <div className="home">
           <Header />
-          {/* <AvaliableTime /> */}
+          <AvaliableTime />
         </div>
       </div>
     );
