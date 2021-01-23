@@ -56,7 +56,7 @@ class Header extends Component {
                 <div className="social-links">
                   {/* linkedin */}
                   <a
-                    href="https://www.linkedin.com/in/yulong-wu-714589190/"
+                    href="https://www.linkedin.com/in/yulongkelly-wu/"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
