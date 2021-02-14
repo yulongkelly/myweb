@@ -8,7 +8,6 @@ import {
   NavItem,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import logo from "./logo.png";
 
 class NavBar extends Component {
   constructor(props) {
@@ -31,7 +30,10 @@ class NavBar extends Component {
         <div className="container">
           <NavbarToggler onClick={this.toggleNav} />
           <NavbarBrand className="mr-auto">
-            <img className="logo" src={logo} />
+            <img
+              className="logo"
+              src="https://yulongkellyweb.s3.amazonaws.com/logo.png"
+            />
           </NavbarBrand>
           <Collapse isOpen={this.state.isNavOpen} navbar>
             <Nav navbar>
