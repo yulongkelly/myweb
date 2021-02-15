@@ -6,8 +6,8 @@ import {
   NavbarToggler,
   Collapse,
   NavItem,
+  NavLink,
 } from "reactstrap";
-import { NavLink } from "react-router-dom";
 
 class NavBar extends Component {
   constructor(props) {
@@ -26,31 +26,31 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Navbar color="dark" expand="xs" className="navbar">
+      <Navbar dark color="dark" expand="md" id="navbar">
         <div className="container">
-          <NavbarToggler onClick={this.toggleNav} />
           <NavbarBrand className="mr-auto">
             <img
               className="logo"
               src="https://yulongkellyweb.s3.amazonaws.com/logo.png"
             />
           </NavbarBrand>
+          <NavbarToggler onClick={this.toggleNav} />
           <Collapse isOpen={this.state.isNavOpen} navbar>
             <Nav navbar>
               <NavItem className="mt-2">
-                <NavLink className="nav-link" to="/home">
+                <NavLink className="navlink" href="/home">
                   <i className="fas fa-laptop-code" />
                   Home
                 </NavLink>
               </NavItem>
               <NavItem className="mt-2">
-                <NavLink className="nav-link" to="/project">
+                <NavLink className="navlink" href="/project">
                   <i className="fas fa-laptop-code" />
                   Project
                 </NavLink>
               </NavItem>
               <NavItem className="mt-2">
-                <NavLink className="nav-link" to="/secretagenda">
+                <NavLink className="navlink" href="/secretagenda">
                   <i className="fas fa-calendar-alt" />
                   Agenda
                 </NavLink>

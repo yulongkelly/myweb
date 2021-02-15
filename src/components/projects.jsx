@@ -1,53 +1,92 @@
-import React, { Component } from "react";
-import { Card, CardGroup, Col } from "react-bootstrap";
-import five from "./five-in-a-row.png";
-import academic from "./academic.png";
-import habit1 from "./habit1.png";
+import React from "react";
 
-class Project extends Component {
-  render() {
-    return (
-      <CardGroup>
-        <Card>
-          <Card.Img variant="top" src={five} className="projectImg" />
-          <Card.Body>
-            <Card.Title>Five In a Row</Card.Title>
-            <Card.Text>This is an abstract strategy board game.</Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-        <Card>
-          <Card.Img variant="top" src={academic} className="projectImg" />
-          <Card.Body>
-            <Card.Title>Academic Anonymous</Card.Title>
-            <Card.Text>
-              Academics Anonymous is a live QA session that allows students to
-              continuously ask questions during in-class lectures.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-        <Card>
-          <Card.Img variant="top" src={habit1} className="projectImg" />
-          <Card.Body>
-            <Card.Title>Habit Haven</Card.Title>
-            <Card.Text>
-              This app tackles the issue of self-discipline by setting
-              short-term goals for the user which will lead them towards a more
-              productive path.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-      </CardGroup>
-    );
-  }
+export default function Projects() {
+  return (
+    <section className="container-fluid">
+      <div id="projects" className="justify-content-center">
+        <div className="row align-items-center">
+          <div className="col-md-6 img justify-content-center">
+            <img
+              className="img-fluid"
+              src="https://yulongkellyweb.s3.amazonaws.com/academic-min.png"
+              alt="project1"
+            />
+          </div>
+          <div className="col-md-6 text-center">
+            <div className="row justify-content-center">
+              <div className="col-10 col-lg-8">
+                <h2>
+                  <a
+                    href="https://github.com/yulongkelly/Academic-Anonymous"
+                    style={{ color: "black" }}
+                  >
+                    Academic Anonymous
+                  </a>
+                </h2>
+                <p className="intro">
+                  Academic Anonymous is a live QA session that allows students
+                  to continuously ask questions during in-class lectures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row align-items-center">
+          <div className="col-md-6 text-center order-2 order-md-1">
+            <div className="row justify-content-center">
+              <div className="col-10 col-lg-8">
+                <h2>
+                  <a
+                    href="https://github.com/yulongkelly/Gomoku"
+                    style={{ color: "black" }}
+                  >
+                    Five In a Row
+                  </a>
+                </h2>
+                <p className="intro">
+                  This is an abstract strategy board game.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 order-1 order-md-2">
+            <img
+              className="img-fluid"
+              src="https://yulongkellyweb.s3.amazonaws.com/five-in-a-row-min.png"
+              alt="project2"
+            />
+          </div>
+        </div>
+        <div className="row align-items-center">
+          <div className="col-md-6 img justify-content-center">
+            <img
+              className="img-fluid"
+              src="https://yulongkellyweb.s3.amazonaws.com/habit-min.png"
+              alt="project3"
+              style={{ maxHeight: 500, paddingLeft: 150 }}
+            />
+          </div>
+          <div className="col-md-6 text-center">
+            <div className="row justify-content-center">
+              <div className="col-10 col-lg-8">
+                <h2>
+                  <a
+                    href="https://github.com/yulongkelly/DeltaHacks"
+                    style={{ color: "black" }}
+                  >
+                    Habit Haven
+                  </a>
+                </h2>
+                <p className="intro">
+                  This app tackles the issue of self-discipline by setting
+                  short-term goals for the user which will lead them towards a
+                  more productive path.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
-
-export default Project;
