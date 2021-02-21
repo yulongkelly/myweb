@@ -32,7 +32,7 @@
     "redux": "3.7.2",
     "save": "^2.4.0",
     "serve": "^11.3.2",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "dev": "react-scripts start",
