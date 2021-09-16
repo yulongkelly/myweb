@@ -5,7 +5,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "@syncfusion/ej2-react-schedule": "^18.1.48",
-    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/jest-dom": "^5.1.0",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
@@ -27,7 +27,7 @@
     "react-native-linear-gradient": "^2.5.6",
     "react-redux": "5.0.7",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^4.0.0",
     "reactstrap": "^8.4.1",
     "redux": "3.7.2",
     "save": "^2.4.0",
